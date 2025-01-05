@@ -1,0 +1,15 @@
+<div class="my-10 px-4 text-center">
+  <div class="text-center flex justify-center">
+    <div *ngFor="let chart of chartList">
+      <span
+        (click)="onChartChange(chart)"
+        class="p-2 mx-4 font-medium rounded bg-slate-300 w-full"
+      >
+        {{ chart }} Chart
+      </span>
+    </div>
+  </div>
+  <div class="chart-container text-center my-10" *ngIf="showChart | async">
+    <canvas id="MyChart">{{ chart }}</canvas>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+* {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.active-link {
+  border-bottom: 2px solid #1f2937;
+}
